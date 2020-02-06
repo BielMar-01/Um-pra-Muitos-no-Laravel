@@ -1,0 +1,51 @@
+[2020-02-06 13:18:59] local.ERROR: syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalThrowableError(code: 0): syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST) at /home/gabriel/code/rel-um-pra-muitos/database/seeds/CategoriaSeeder.php:21)
+[stacktrace]
+#0 /home/gabriel/code/rel-um-pra-muitos/vendor/composer/ClassLoader.php(322): Composer\\Autoload\\includeFile('/home/gabriel/c...')
+#1 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('CategoriaSeeder')
+#2 [internal function]: spl_autoload_call('CategoriaSeeder')
+#3 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('CategoriaSeeder')
+#4 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\\Container\\Container->build('CategoriaSeeder')
+#5 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/Container.php(629): Illuminate\\Container\\Container->resolve('CategoriaSeeder', Array)
+#6 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(776): Illuminate\\Container\\Container->make('CategoriaSeeder', Array)
+#7 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(80): Illuminate\\Foundation\\Application->make('CategoriaSeeder')
+#8 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(38): Illuminate\\Database\\Seeder->resolve('CategoriaSeeder')
+#9 /home/gabriel/code/rel-um-pra-muitos/database/seeds/DatabaseSeeder.php(14): Illuminate\\Database\\Seeder->call('CategoriaSeeder')
+#10 [internal function]: DatabaseSeeder->run()
+#11 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#12 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#13 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#14 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#15 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#16 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(134): Illuminate\\Container\\Container->call(Array)
+#17 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(63): Illuminate\\Database\\Seeder->__invoke()
+#18 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(122): Illuminate\\Database\\Console\\Seeds\\SeedCommand->Illuminate\\Database\\Console\\Seeds\\{closure}()
+#19 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(64): Illuminate\\Database\\Eloquent\\Model::unguarded(Object(Closure))
+#20 [internal function]: Illuminate\\Database\\Console\\Seeds\\SeedCommand->handle()
+#21 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(32): call_user_func_array(Array, Array)
+#22 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/Util.php(36): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#23 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(90): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#24 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#25 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Container/Container.php(590): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#26 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Console/Command.php(201): Illuminate\\Container\\Container->call(Array)
+#27 /home/gabriel/code/rel-um-pra-muitos/vendor/symfony/console/Command/Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#28 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Console/Command.php(188): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 /home/gabriel/code/rel-um-pra-muitos/vendor/symfony/console/Application.php(1012): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#30 /home/gabriel/code/rel-um-pra-muitos/vendor/symfony/console/Application.php(272): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Seeds\\SeedCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /home/gabriel/code/rel-um-pra-muitos/vendor/symfony/console/Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Console/Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 /home/gabriel/code/rel-um-pra-muitos/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(131): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 /home/gabriel/code/rel-um-pra-muitos/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 {main}
+"} 
+[2020-02-06 13:20:05] local.ERROR: Label 'DB' already defined {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Label 'DB' already defined at /home/gabriel/code/rel-um-pra-muitos/database/seeds/CategoriaSeeder.php:15)
+[stacktrace]
+#0 {main}
+"} 
+[2020-02-06 13:20:52] local.ERROR: Label 'DB' already defined {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Label 'DB' already defined at /home/gabriel/code/rel-um-pra-muitos/database/seeds/CategoriaSeeder.php:15)
+[stacktrace]
+#0 {main}
+"} 
+[2020-02-06 13:21:42] local.ERROR: Label 'DB' already defined {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 64): Label 'DB' already defined at /home/gabriel/code/rel-um-pra-muitos/database/seeds/ProdutoSeeder.php:18)
+[stacktrace]
+#0 {main}
+"} 
